@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO DA GASOLINA</title>
+    <meta name="keywords" content="CALCULO DA GASOLINA">
+    <link rel="shortcut icon" href="./image/gasolina.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <img class="logo" src="./image/logo.png" alt="bomba-gasolina">
+        <h1 id="text">Qual melhor opção</h1>
+
+        <form onsubmit="calcular(event)" class="formulario">
+            <label>Alcool (preço por litro)</label>
+            <input id="alcool" class="input" type="number" placeholder="4.41" min="1" step="0.01" required>
+
+            <label>Gasolina (preço por litro)</label>
+            <input id="gasolina" class="input" type="number" placeholder="5.07" min="1" step="0.01" required>
+
+            <input class="button" type="submit" value="calcular">
+        </form>
+
+        <section id="content-result" class="resultado hide">
+            <span id="text-result">Compensa usar Alcool</span>
+
+            <span id="alcool-result">Alcool R$ 4.41</span>
+            <span id="gasolina-result">Gasolina R$ 5.07</span>
+        </section>
+
+    </main>
+    <div class="info">
+        <span class="merda">Veja como é feito o calculo</span>
+        <a href="#"><img class="info-img" src="./image/info.png" alt="info"></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

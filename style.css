@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #22272e;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.logo {
+    max-width: 227px;
+}
+
+#text {
+    text-align: center;
+    color: aliceblue;
+    margin: 24px 0;
+}
+
+.formulario label {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.button {
+    width: 100%;
+    height: 49px;
+    background-color: #119cea;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resultado {
+    background-color: rgb(3, 80, 3);
+    max-width: 520px;
+    padding: 20px 28px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #696969;
+    user-select: none;
+    transition: transform 0.8s;
+}
+
+.hide {
+    display: none;
+}
+
+.resultado span {
+    color: aliceblue;
+    margin-bottom: 12px;
+}
+
+.resultado:hover {
+    transform: scale(1.1);
+}
+
+#text-result {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info {
+    position: fixed;
+    right: 14px;
+    bottom: 22px;
+}
+
+.info-img {
+    width: 66px;
+    height: 66px;
+}
+
+.merda {
+    color: aliceblue;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 8px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 28px;
+    display: none;
+}
+
+.info:hover .merda {
+   display: inline; 
+}
